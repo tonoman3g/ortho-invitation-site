@@ -38,7 +38,8 @@
     <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link href="https://fonts.cdnfonts.com/css/savoye-let" rel="stylesheet">                
+    <link href="https://fonts.cdnfonts.com/css/apricot" rel="stylesheet">                
+    <!-- <link href="https://fonts.cdnfonts.com/css/savoye-let" rel="stylesheet">                 -->
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 <body id="top">
@@ -53,8 +54,9 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <div class="invitation-text">
-                        <p>Farewell Ortho UI</p>
-                        <p>2018-2019</p>
+                        <p style="font-family: Apricot; font-size: 72px">Farewell</p>
+                        <p style="font-family: Apricot; font-size: 72px">Ortho UI</p>
+                        <p style="font-family: Apricot; font-size: 72px">2018 - 2019</p>
                     </div>
                     <div class="open-invitation">
                         <i class="fa fa-envelope-o pulse2" aria-hidden="true"></i>
@@ -77,15 +79,17 @@
         <header>
             <div class="header-content">
                 <!-- <div class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></div> -->
-                <div class="logo"><a href="#"><div class="fa fa-graduation-cap"></div></a></div>
+                <div class="logo"><a href="#"><strong><div style="font-size: large" class="fa fa-graduation-cap"></div></strong></a></div>
                 <div class="header-nav">
                     <nav>
                         <ul class="primary-nav">
-                            <li><a href="#events">Events</a></li>
-                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#events"><strong>Events</strong></a></li>
+                            <li><a href="#gallery"><strong>Gallery</strong></a></li>
                         </ul>
                         <ul class="member-actions">
-                            <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
+                            <li><i id="mute-ost" class="fa fa-pause" style='color: white; font-size:18px; padding-right: 10px;'></i></li>
+                            <li><i id="play-ost" class="fa fa-play" style='color: white; font-size:18px; padding-right: 10px;'></i></li>
+                            <!-- <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li> -->
                         </ul>
                     </nav>
                 </div>
@@ -118,49 +122,26 @@
 
 
 <section id="invitation" class="section-padding">
+    <audio class="ost" autoplay controls loop="loop" style="display:none;">
+        <source src="./ost.mp3" type="audio/mp3" />
+    </audio>
     <div class="container">
-        <audio class="ost" autoplay controls loop="loop" style="display:none;">
-            <source src="./ost.mp3" type="audio/mp3" />
-        </audio>
         <div class="row">
             <div class="col-md-12 text-center">
-                <h1 style="font-family: Savoye Let; font-size: 90px">Farewell Lunch</h1>
-                <h2 style="font-family: Savoye Let; font-size: 40px">Ortho UI 2018-2019</h2>
+                <h1 style="font-family: Apricot; font-size: 90px">Farewell</h1>
+                <h2 style="font-family: Apricot; font-size: 40px">Ortho UI</h2>
+                <h2 style="font-family: Apricot; font-size: 40px">2018-2019</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12 text-center">
-                
-                Please come and join us
+            <div class="col-md-12 text-center">                
+                <!-- Please come and join us! -->
                 <!-- <div class="share-bar"></div> -->
             </div>
         </div>
     </div>
 </section>
 
-
-<!-- <section id="intro">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3 class="header">Here we are</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3 hidden-sm hidden-xs"><img src="img/left.jpeg" class="wp1"></div>
-            <div class="col-md-6">
-                <p>                    
-                    Loren ipsum
-                </p>
-            </div>
-            <div class="col-md-3 hidden-sm hidden-xs"><video src="img/right.mp4" class="wp2"></div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/left.jpeg" class="wp8"></div>
-            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><video src="img/right.mp4" class="wp9"></div>
-        </div>
-    </div>
-</section> -->
 
 <section class="events section-padding" id="events">
     <div class="container">
@@ -173,10 +154,10 @@
             <div class="col-md-12 text-center">
                 <div class="wp3">
                     <p><h4><strong>Wednesday, 5 June 2024</strong></h4></p>
-                    <h5><strong>Lunch</strong> <span class="time">12.00 - 14.30 WIB (Gate Open 11.30 WIB)</span></h5>
-                    <p><a href="https://maps.app.goo.gl/qiKncWBpKvn5UZ44A">Park Hyatt Jakarta</a></p>
-                    <p><strong>Theme</strong> Sky is The Beginning</p>
-                    <p><strong>Dress Code</strong> Anything Blue</p>
+                    <p><strong>Lunch</strong><br/><span class="">12.00 - 14.30 WIB (Gate Open 11.30 WIB)</span></p>
+                    <p><strong>Location</strong><br/><a href="https://maps.app.goo.gl/qiKncWBpKvn5UZ44A">Park Hyatt Jakarta</a></p>
+                    <p><strong>Theme</strong><br/>Sky is The Beginning</p>
+                    <p><strong>Dress Code</strong><br/>Anything Blue</p>
                 </div>
                 
             </div>            
@@ -223,70 +204,81 @@
         </div>
         <div class="row">
             <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/image1.png">
+                <a class="fancybox" rel="group" href="img/eng_pics/image1.jpg">
                     <div class="img-wrap">
                         <div class="overlay">
                             <i class="fa fa-search"></i>
                         </div>
-                        <img src="img/eng_pics/image1.png" alt=""/>
+                        <img src="img/eng_pics/image1.jpg" alt=""/>
                     </div>
                 </a>
             </div>
             <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/image2.png">
+                <a class="fancybox" rel="group" href="img/eng_pics/image2.jpg">
                     <div class="img-wrap">
                         <div class="overlay">
                             <i class="fa fa-search"></i>
                         </div>
-                        <img src="img/eng_pics/image2.png" alt=""/>
+                        <img src="img/eng_pics/image2.jpg" alt=""/>
                     </div>
                 </a>
             </div>
             
             <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/image3.png">
+                <a class="fancybox" rel="group" href="img/eng_pics/image3.jpg">
                     <div class="img-wrap">
                         <div class="overlay">
                             <i class="fa fa-search"></i>
                         </div>
-                        <img src="img/eng_pics/image3.png" alt=""/>
+                        <img src="img/eng_pics/image3.jpg" alt=""/>
                     </div>
                 </a>
             </div>
            
             <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/image4.png">
+                <a class="fancybox" rel="group" href="img/eng_pics/image4.jpg">
                     <div class="img-wrap">
                         <div class="overlay">
                             <i class="fa fa-search"></i>
                         </div>
-                        <img src="img/eng_pics/image4.png" alt=""/>
+                        <img src="img/eng_pics/image4.jpg" alt=""/>
                     </div>
                 </a>
             </div>
                         
             <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/image5.png">
+                <a class="fancybox" rel="group" href="img/eng_pics/image5.jpg">
                     <div class="img-wrap">
                         <div class="overlay">
                             <i class="fa fa-search"></i>
                         </div>
-                        <img src="img/eng_pics/image5.png" alt=""/>
+                        <img src="img/eng_pics/image5.jpg" alt=""/>
                     </div>
                 </a>
             </div>
 
             <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/image6.png">
+                <a class="fancybox" rel="group" href="img/eng_pics/image6.jpg">
                     <div class="img-wrap">
                         <div class="overlay">
                             <i class="fa fa-search"></i>
                         </div>
-                        <img src="img/eng_pics/image6.png" alt=""/>
+                        <img src="img/eng_pics/image6.jpg" alt=""/>
                     </div>
                 </a>
             </div>
-            
+
+            <!-- <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/image7.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/image7.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+             -->
         </div>
     </div>
     <div class="container">
@@ -344,7 +336,7 @@
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <h3>RSVP</h3>
-                <p> Please confirm your attendance here</p>
+                <p> Please confirm your attendance here.</p>
                 <form id="rsvp-form" class="rsvp-form"
                       action=""
                       method="POST">
@@ -376,6 +368,10 @@
                                     <option value=""></option>
                                     <option value="2018">2018 class</option>
                                     <option value="2019">2019 class</option>
+                                    <option value="2020">2020 class</option>
+                                    <option value="2021">2021 class</option>
+                                    <option value="2022">2022 class</option>
+                                    <option value="2023">2023 class</option>
                                     </select>
                             </div>
                         </div>                        
@@ -396,6 +392,13 @@
                         Confirm
                     </button>
                 </form>
+                <br/>
+                <p>If you have any questions, contact <strong>Agia</strong>
+                    <br/>
+                    <a aria-label="Chat on WhatsApp" href="https://wa.me/6281334328979"> 
+                        <img alt="Chat on WhatsApp" src="WhatsAppButtonGreenSmall.png" /> 
+                    </a>
+                    <br/>or +6281334328979</p>
             </div>
         </div>
     </div>

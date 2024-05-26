@@ -207,7 +207,7 @@ $(document).ready(function () {
   /********************** Embed audio *********************/
   $("#open-envelope").click(function () {
     var ost = $(".ost").get(0);
-    // ost.play()
+    ost.play();
   });
 
   $("#mute-ost").click(function () {
@@ -293,7 +293,7 @@ $(document).ready(function () {
     //     $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
     // } else {
     $.post(
-      "https://script.google.com/macros/s/AKfycbz9rFml_Yi0vRvQfWICqdHrdKkUsnFlwwzofW3zh3Q5wUXS65WERqNFfZJVrtvOzFbE/exec",
+      "https://script.google.com/macros/s/AKfycby013PQzB2872T86w0hi0iSIwYYIEQ-IJlcDfsUSmqSXnK3UEltIeVnaSdUyMobw1Rd/exec",
       data
     )
       .done(function (data) {
